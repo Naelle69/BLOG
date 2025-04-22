@@ -1,0 +1,43 @@
+/* Variables de couleur */
+:root {
+    --sage: #A8C4A2;
+    --powder: #EAC6C6;
+    --ivory: #FAF8F5;
+    --gold: #E6B87A;
+    --lavender: #D8CDEA;
+    --beige: #DDD0C8;
+    --forest: #4B715F;
+  }
+  
+  /* En-tête */
+  .bg-sage {
+    background-color: var(--sage);
+  }
+  .text-beige {
+    color: var(--beige);
+  }
+  
+  /* Section Héro */
+  .bg-lavender {
+    background-color: var(--lavender);
+  }
+  .btn-gold {
+    background-color: var(--gold);
+    border-color: var(--gold);
+  }
+  
+  /* Contenu Principal */
+  .bg-ivory {
+    background-color: var(--ivory);
+  }
+  .bg-powder {
+    background-color: var(--powder);
+  }
+  .text-forest {
+    color: var(--forest);
+  }
+  
+  /* Pied de Page */
+  .bg-forest {
+    background-color: var(--forest);
+  }
