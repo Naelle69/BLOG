@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog Bien-être</title>
   <script src="https://cdn.tailwindcss.com"></script>
+<!--   <link rel="stylesheet" href="style.css"> -->
 </head>
-<body class="bg-[#FAF8F5] text-[#4B715F] font-sans">
-  <header class="bg-[#4B715F] p-6 rounded-b-2xl shadow-md text-white">
-    <h1 class="text-4xl font-bold text-center font-serif">Équilibre & Beauté</h1>
-    <nav class="flex justify-center mt-4 space-x-6 text-[#FAF8F5]">
-      <a href="#" class="hover:text-[#EAC6C6]">Accueil</a>
-      <a href="#" class="hover:text-[#EAC6C6]">Beauté</a>
-      <a href="#" class="hover:text-[#EAC6C6]">Nutrition</a>
-      <a href="#" class="hover:text-[#EAC6C6]">Soins</a>
-      <a href="#" class="hover:text-[#EAC6C6]">Contact</a>
+<body class="bg-[#FAF8F5]  font-sans text-[#4B715F]">
+  <header class="mt-5">
+    <h1 class="text-5xl font-bold py-11 text-center font-serif">Équilibre & Beauté</h1>
+    <nav class="flex justify-center mt-5 py-2 py-lg-4 bg-[#DDD0C8] gap-8 text-[#4B715F] shadow-md">
+      <a href="#" class="hover:text-[#3A5C4E] hover:underline">Accueil</a>
+      <a href="#" class="hover:text-[#3A5C4E] hover:underline">Beauté</a>
+      <a href="#" class="hover:text-[#3A5C4E] hover:underline">Nutrition</a>
+      <a href="#" class="hover:text-[#3A5C4E] hover:underline">Soins</a>
+      <a href="#" class="hover:text-[#3A5C4E] hover:underline">Contact</a>
     </nav>
   </header>
 
@@ -23,44 +24,91 @@
     <main class="w-full lg:w-1/7 space-y-8 ms-lg-5">
       <!-- HERO SECTION -->
       <section class="relative">
-        <img src="/wellness-1021131_640.jpg" class="rounded-2xl w-full mt-5" alt="hero image">
+        <img src="./images/stones-947475_640.jpg" class="w-full rounded-2xl mt-2" alt="hero image">
         <div class="absolute inset-0 bg-black bg-opacity-40 rounded-2xl flex flex-col justify-center items-center text-white p-8">
-          <h2 class="text-3xl font-semibold">Simplement Essentiel</h2>
-          <p class="mt-2 text-center">Moins de produits, plus de bien-être</p>
+          <h2 class="text-4xl font-bold font-serif">Simplement Essentiel</h2>
+          <p class="mt-2 text-center text-4xl ">Moins de produits, plus de bien-être</p>
         </div>
       </section>
 
       <!-- BLOCKS -->
-      <div class="grid md:grid-cols-4 gap-6">
-        <fieldset class="border-2 border-[#DDD0C8] rounded-lg p-4 bg-[#EAC6C6]">
-          <legend class="px-2 text-sm font-semibold text-[#4B715F]">Beauté naturelle</legend>
-          <p class="text-sm">Réduisez votre routine, maximisez l'effet. Découvrez une beauté sans artifices.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
+          <legend class="px-2 text-sm font-bold text-[#4B715F]">💄 Beauté Minimaliste</legend>
+          <p class="text-sm">Routines simples & produits clean. Privilégier les essentiels pour révéler sa beauté naturelle.</p>
         </fieldset>
 
-        <fieldset class="border-2 border-[#DDD0C8] rounded-lg p-4 bg-[#A8C4A2]">
-          <legend class="px-2 text-sm font-semibold text-[#4B715F]">Nutrition simple</legend>
-          <p class="text-sm">Des repas légers, peu d'ingrédients, beaucoup de bienfaits.</p>
+        <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
+          <legend class="px-2 text-sm font-bold text-[#4B715F]">🧴 Soins Intelligents</legend>
+          <p class="text-sm">Actifs naturels, routines peau minimalistes. Moins mais mieux.</p>
         </fieldset>
         
-        <fieldset class="border-2 border-[#DDD0C8] rounded-lg p-4 bg-[#D8CDEA]">
-          <legend class="px-2 text-sm font-semibold text-[#4B715F]">Soin minimaliste</legend>
-          <p class="text-sm">Prenez soin de vous avec trois gestes essentiels, pas plus.</p>
+        <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
+          <legend class="px-2 text-sm font-bold text-[#4B715F]">🍽️ Nutrition Intuitive</legend>
+          <p class="text-sm">Manger avec plaisir, sans frustration. Simplicité, qualité, écoute de soi.</p>
         </fieldset>
 
-        <fieldset class="border-2 border-[#DDD0C8] rounded-lg p-4 bg-[#E6B87A]">
-            <legend class="px-2 text-sm font-semibold text-[#4B715F]">Soin minimaliste</legend>
-            <p class="text-sm">Prenez soin de vous avec trois gestes essentiels, pas plus.</p>
+        <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
+            <legend class="px-2 text-sm font-bold text-[#4B715F]">🌺 Rituels Naturels</legend>
+            <p class="text-sm">Infusions, automassages, herboristerie... Le pouvoir doux des plantes au quotidien.</p>
+        </fieldset>
+
+        <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
+          <legend class="px-2 text-sm font-bold text-[#4B715F]">🕊️ Vivre Léger</legend>
+          <p class="text-sm">Consommer moins, mieux, pour une vie plus claire et alignée.</p>
+        </fieldset>
+
+        <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
+          <legend class="px-2 text-sm font-bold text-[#4B715F]">🌍 Éco-Responsabilité</legend>
+          <p class="text-sm">Bien-être éthique : marques engagées, produits durables et gestes responsables.</p>
         </fieldset>
       </div>
 
       <!-- ARTICLE EXEMPLE -->
-      <article class="bg-white border border-[#DDD0C8] p-6 rounded-2xl shadow-sm">
-        <img src="https://via.placeholder.com/600x300" class="rounded mb-4" alt="image article">
-        <h3 class="text-2xl font-bold text-[#4B715F] mb-2">Simplifier sa salle de bain</h3>
-        <p class="text-sm text-[#4B715F]">Découvrez comment alléger votre routine quotidienne avec seulement 3 produits efficaces. Moins d’emballages, moins de stress, plus de sérénité.</p>
-        <button class="mt-4 bg-[#E6B87A] text-white px-4 py-2 rounded hover:bg-[#d5a760]">Lire plus</button>
+      <article class="flex items-center flex-col md:flex-row bg-white border border-[#DDD0C8] p-6 rounded-2xl shadow-sm gap-4">
+          <!-- Image principale -->
+          <div class="w-full md:w-1/2">
+            <img src="./images/essential-oils-3931430_640.jpg" class="rounded-l-xl" alt="image article">
+          </div>
+          <!-- Contenu de l'article -->
+          <div class="article-box w-full md:w-1/2">
+          <h3 class="text-2xl font-bold text-[#4B715F] mb-2">Simplifier sa salle de bain</h3>
+          <p class="text-sm text-[#4B715F] py-2 py-md-4 ">Découvrez comment alléger votre routine quotidienne avec seulement 3 produits efficaces. Moins d’emballages, moins de stress, plus de sérénité.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet alias laborum hic, veritatis animi nihil repellendus! Veritatis quas iusto atque illo recusandae neque odio nihil sunt aspernatur! Sint, nihil.
+            <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, sint quod unde beatae magni, itaque amet dicta laborum earum sequi atque assumenda consequuntur non a nisi aut. Earum, aspernatur eligendi.
+            <br>
+            <br>
+          </p>
+          <div class="flex flex-row items-center text-[#E6B87A] text-sm">
+            <p class="mr-2">
+              Publié le <time datetime="2022-08-24">24 août 2022</time> <!-- par John Doe -->
+            </p>
+            <br>
+            <br>
+            <p>Temps de lecture: <span id="reading-time" class="ml-2"></span></p>
+          </div>
+          <!-- Auteur -->
+          <div class="flex items-center mt-4">
+            <img src="./images/jane-smith.jpg" alt="Photo de Jane Smith" class="w-12 h-12 rounded-full mr-2">
+            <div>
+              <p class="font-bold">Jane Smith</p>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Fusce quis justo euismod, ultricies lorem id, tincidunt erat.</p>
+            </div>
+          </div>
+          <!-- Catégories et tags -->
+          <div class="mt-4">
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Beauté</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Recettes</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Soins</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Bien-être</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Eco-responsabilité</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Rituels</button>
+          </div>
+          <button class="mt-4 bg-[#4B715F] text-white px-4 py-2 rounded hover:bg-[#355948]">Lire plus</button>
+        </div>
       </article>
-
+      
       <!-- PAGINATION -->
       <div class="flex justify-center space-x-2 pt-4">
         <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2]">1</button>
@@ -72,10 +120,10 @@
     <!-- SIDEBAR -->
     <aside class="w-full lg:w-1/3 space-y-6 ms-lg-5">
       <!-- ABOUT ME -->
-      <fieldset class="border-2 border-[#DDD0C8] rounded-lg p-4 bg-[#D8CDEA]">
-        <legend class="px-2 text-sm font-semibold text-[#4B715F]">À propos</legend>
+      <fieldset class="border border-[#DDD0C8] rounded-lg p-4 ">
+        <legend class="px-2 text-sm font-semibold text-[#4B715F]">👤 À propos</legend>
         <div class="text-center">
-          <img src="https://via.placeholder.com/100" class="rounded-full mx-auto mb-4" alt="profil">
+          <img src="./images/wellness-1021131_640.jpg" class="mb-4" alt="profil">
           <h4 class="text-lg font-semibold">Marie Dubois</h4>
           <p class="text-sm mt-2">Passionnée de bien-être et de simplicité naturelle.</p>
           <p class="italic mt-2">"Moins mais mieux."</p>
@@ -83,39 +131,39 @@
       </fieldset>
 
       <!-- NEWSLETTER -->
-      <fieldset class="border-2 border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
-        <legend class="px-2 text-sm font-semibold text-[#4B715F]">Newsletter</legend>
+      <fieldset class="border border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
+        <legend class="px-2 text-sm font-semibold text-[#4B715F]">📰 Newsletter</legend>
         <p class="text-sm mb-2">Recevez mes conseils bien-être directement par mail.</p>
         <input type="email" placeholder="Votre e-mail" class="w-full p-2 mb-2 rounded border border-[#A8A29E]">
         <button class="bg-[#4B715F] text-white w-full py-2 rounded hover:bg-[#355948]">S'inscrire</button>
       </fieldset>
 
       <!-- SOCIALS -->
-      <fieldset class="border-2 border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
-        <legend class="px-2 text-sm font-semibold text-[#4B715F]">Suivez-moi</legend>
+      <fieldset class="border border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
+        <legend class="px-2 text-sm font-semibold text-[#4B715F]">📱 Suivez-moi</legend>
         <div class="flex justify-center space-x-4 text-2xl">
-          <a href="#" class="hover:text-[#EAC6C6]">📸</a>
-          <a href="#" class="hover:text-[#EAC6C6]">🐦</a>
-          <a href="#" class="hover:text-[#EAC6C6]">📘</a>
-          <a href="#" class="hover:text-[#EAC6C6]">📌</a>
+          <a href="#" class="hover:text-[#E6B87A]">📸</a>
+          <a href="#" class="hover:text-[#E6B87A]">🐦</a>
+          <a href="#" class="hover:text-[#E6B87A]">📘</a>
+          <a href="#" class="hover:text-[#E6B87A]">📌</a>
         </div>
       </fieldset>
 
       <!-- PUBLICITÉ -->
-      <fieldset class="border-2 border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
-        <legend class="px-2 text-sm font-semibold text-[#4B715F]">Publicité</legend>
+      <fieldset class="border border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
+        <legend class="px-2 text-sm font-semibold text-[#4B715F]">🪧 Publicité</legend>
         <div class="h-24 bg-[#FAF8F5] flex items-center justify-center text-[#A8A29E] border border-dashed border-[#A8A29E]">Ad Here</div>
       </fieldset>
 
       <!-- POSTS POPULAIRES -->
-      <fieldset class="border-2 border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
-        <legend class="px-2 text-sm font-semibold text-[#4B715F]">Posts populaires</legend>
+      <fieldset class="border border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
+        <legend class="px-2 text-sm font-semibold text-[#4B715F]">🔥 Posts populaires</legend>
         <ul class="text-sm list-disc list-inside space-y-1">
-          <li><a href="#" class="hover:text-[#EAC6C6]">Routine peau simplifiée</a></li>
-          <li><a href="#" class="hover:text-[#EAC6C6]">Recettes express & saines</a></li>
-          <li><a href="#" class="hover:text-[#EAC6C6]">Salle de bain minimaliste</a></li>
-          <li><a href="#" class="hover:text-[#EAC6C6]">Pourquoi j'ai arrêté le fond de teint</a></li>
-          <li><a href="#" class="hover:text-[#EAC6C6]">Top 5 huiles végétales</a></li>
+          <li><a href="#" class="hover:text-[#E6B87A]">Routine peau simplifiée</a></li>
+          <li><a href="#" class="hover:text-[#E6B87A]">Recettes express & saines</a></li>
+          <li><a href="#" class="hover:text-[#E6B87A]">Salle de bain minimaliste</a></li>
+          <li><a href="#" class="hover:text-[#E6B87A]">Pourquoi j'ai arrêté le fond de teint</a></li>
+          <li><a href="#" class="hover:text-[#E6B87A]">Top 5 huiles végétales</a></li>
         </ul>
       </fieldset>
     </aside>
@@ -148,7 +196,7 @@
   
     <!-- Signature éditoriale -->
     <div class="mt-6 italic text-sm">
-      “Ce blog est une ode à la simplicité. Ici, on célèbre la beauté du peu : moins de produits, moins d’ingrédients, mais plus de bien-être, plus de naturel, plus de vrai.”
+      “Ce blog est une ode à la simplicité. Ici, on célèbre la beauté du peu et l'engagement pour la préservation de l'environnement : moins de produits, moins d’ingrédients, mais plus de bien-être, plus de naturel, plus de vrai.”
     </div>
   
     <!-- Liens légaux & copyright -->
@@ -161,6 +209,6 @@
       </div>
     </div>
   </footer>
-  
+  <script src="script.js"></script>
 </body>
 </html>

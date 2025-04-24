@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article - Rien ne vaut New York</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Définition des couleurs de la charte */
+    :root {
+      --bg-body: #FAF8F5;
+      --text-primary: #4B715F;
+      --border-color: #DDD0C8;
+      --button-bg: #4B715F;
+      --button-hover-bg: #355948;
+      --meta-text: #E6B87A;
+    }
+  </style>
+</head>
+<body class="bg-[var(--bg-body)] font-sans text-[var(--text-primary)]">
+  <main class="container mx-auto px-4 py-8">
+    <!-- Article -->
+    <article class="flex flex-col md:flex-row bg-white border border-[var(--border-color)] p-6 rounded-2xl shadow-sm gap-4">
+      <!-- Image principale -->
+      <div class="w-full md:w-1/2">
+        <img src="./images/new-york-main.jpg" alt="Image principale de l'article" class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+
+      <!-- Contenu de l'article -->
+      <div class="w-full md:w-1/2">
+        <h1 class="text-3xl font-bold mb-2">Rien ne vaut New York</h1>
+        <p class="text-sm mb-4">
+          Publié le <time datetime="2022-08-24">24 août 2022</time> par John Doe
+        </p>
+
+        <p class="mb-4">
+          Il est passé un temps où je pensais que Paris était la ville parfaite. Mais quand j'ai découvert New York, tout a changé. La foule, le bruit, la diversité culturelle... Tout cela m'a captivé. Chaque rue raconte une histoire, chaque immeuble cache un secret.
+        </p>
+
+        <p class="mb-4">
+          Et puis il y a les gens. Les New-Yorkais sont si différents les uns des autres, mais ils partagent tous cette énergie incroyable. C'est comme si chaque jour était une nouvelle aventure. Vous pouvez marcher dans Times Square et sentir l'excitation palpiter dans l'air.
+        </p>
+
+        <p class="mb-4">
+          Mais ce qui me touche le plus, c'est l'architecture. De l'Empire State Building aux immeubles Art Déco, chaque bâtiment est une œuvre d'art. New York est une ville qui respire l'histoire et l'innovation.
+        </p>
+
+        <p class="mb-4">
+          Bien sûr, il y a aussi les inconvénients. Les prix de l'immobilier sont exorbitants, et la vie est souvent stressante. Mais pour moi, ces petits désagréments valent largement la peine face à la magie de New York.
+        </p>
+
+        <p class="mb-4">
+          En résumé, New York est une ville qui vous emporte dans un tourbillon d'émotions et d'expériences. Si vous n'avez jamais visité, je vous encourage vivement à le faire au moins une fois dans votre vie.
+        </p>
+
+        <!-- Auteur -->
+        <div class="flex items-center mt-4">
+          <img src="./images/jane-smith.jpg" alt="Photo de Jane Smith" class="w-12 h-12 rounded-full mr-2">
+          <div>
+            <p class="font-bold">Jane Smith</p>
+            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Fusce quis justo euismod, ultricies lorem id, tincidunt erat.</p>
+          </div>
+        </div>
+
+        <!-- Catégories et tags -->
+        <div class="mt-4">
+          <span class="bg-gray-200 text-gray-600 px-2 py-1 rounded mr-2">Catégorie</span>
+          <span class="bg-gray-200 text-gray-600 px-2 py-1 rounded mr-2">Voyages</span>
+          <span class="bg-gray-200 text-gray-600 px-2 py-1 rounded mr-2">New York</span>
+          <span class="bg-gray-200 text-gray-600 px-2 py-1 rounded mr-2">Urbanisme</span>
+        </div>
+
+        <!-- Bouton "Lire plus" -->
+        <button class="mt-4 bg-[var(--button-bg)] text-white px-4 py-2 rounded hover:bg-[var(--button-hover-bg)]">
+          Lire plus
+        </button>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
