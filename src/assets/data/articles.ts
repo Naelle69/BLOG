@@ -29,7 +29,7 @@ export const articles: Article[] = [
     readingTime: "3 min",
     author: {
       name: "Jane Smith",
-      photo: "../assets/images/jane-smith.jpg",
+      photo: "vite.svg",
       bio: "Passionnée de soins naturels et de routines minimalistes.",
       linkedinUrl: "#",
     },

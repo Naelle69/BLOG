@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import TagsPage from "./pages/TagsPage"; // Importez correctement le composant TagsPage
 import NotFoundPage from "./pages/NoFoundPage"; // Décommentez cette ligne si vous avez une page 404
+import ContactPage from "./pages/ContactPage";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,9 @@ const App: React.FC = () => {
 
           {/* Page par Tag */}
           <Route path="/tag/:tag" element={<TagsPage />} />
+
+          {/* Page de Contact */}
+          <Route path="/contact" element={<ContactPage />} />
 
           {/* Page 404 (Erreur) */}
           <Route path="*" element={<NotFoundPage />} />

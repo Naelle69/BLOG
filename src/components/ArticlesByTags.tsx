@@ -38,9 +38,11 @@ const ArticlesByTags: React.FC<ArticlesByTagsProps> = ({ tag }) => {
   };
 
   return (
-    <div className="w-full p-6">
+    <div className="w-full p-6 space-y-6">
       {/* Titre de la page */}
-      <h1 className="text-3xl font-bold text-[#4B715F] mb-6">{tag}</h1>
+      <div className="flex justify-center items-center h-16 border-t border-b border-[#DDD0C8] ">
+        <h1 className="text-3xl font-bold text-[#4B715F]">{tag}</h1>
+      </div>
 
       {/* Affichage des articles */}
       {currentArticles.length > 0 ? (

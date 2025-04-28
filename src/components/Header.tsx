@@ -30,7 +30,7 @@ const Header: React.FC = () => {
 
          <nav className="bg-[#E2D6CF] shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-center items-center h-16">
           {/* Burger Button */}
           <div className="md:hidden">
             <button
@@ -246,7 +246,7 @@ const Header: React.FC = () => {
             {/* Contact */}
             <li>
               <Link
-                to="/contact"
+                to="/contact" 
                 className="block py-2 px-4 text-[#4B715F] hover:text-[#416353] transition-colors duration-200"
               >
                 Contact
