@@ -1,13 +1,29 @@
-import React from 'react';
-import Header from './components/Header';
+// src/App.tsx
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import TagsPage from "./pages/TagsPage"; // Importez correctement le composant TagsPage
+import NotFoundPage from "./pages/NoFoundPage"; // Décommentez cette ligne si vous avez une page 404
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Header />
-     
-    </div>
-  )
-}
+    <Router>
+      <div className="min-h-screen bg-[#FAF8F5]">
+        {/* Routes */}
+        <Routes>
+          {/* Page d'Accueil */}
+          <Route path="/" element={<HomePage />} />
 
-export default App
+          {/* Page par Tag */}
+          <Route path="/tag/:tag" element={<TagsPage />} />
+
+          {/* Page 404 (Erreur) */}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
+
+export default App;

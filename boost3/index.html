@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog Bien-être</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/TON_CODE.js" crossorigin="anonymous"></script>
 <!--   <link rel="stylesheet" href="style.css"> -->
 </head>
 <body class="bg-[#FAF8F5]  font-sans text-[#4B715F]">
@@ -19,96 +20,81 @@
     </nav>
   </header>
 
-  <div class=" mx-lg-5 mx-3 flex flex-col lg:flex-row py-8 px-4 gap-8">
+  <div class="container mx-auto flex flex-col lg:flex-row py-8 px-4 gap-8">
     <!-- MAIN CONTENT -->
-    <main class="w-full lg:w-1/7 space-y-8 ms-lg-5">
+    <main class="w-full lg:w-2/3 flex flex-col items-center space-y-8">
       <!-- HERO SECTION -->
-      <section class="relative">
+      <section class="relative w-full">
         <img src="./images/stones-947475_640.jpg" class="w-full rounded-2xl mt-2" alt="hero image">
         <div class="absolute inset-0 bg-black bg-opacity-40 rounded-2xl flex flex-col justify-center items-center text-white p-8">
           <h2 class="text-4xl font-bold font-serif">Simplement Essentiel</h2>
-          <p class="mt-2 text-center text-4xl ">Moins de produits, plus de bien-être</p>
+          <p class="mt-2 text-center text-4xl">Moins de produits, plus de bien-être</p>
         </div>
       </section>
-
+  
       <!-- BLOCKS -->
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <!-- Chaque bloc -->
         <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
           <legend class="px-2 text-sm font-bold text-[#4B715F]">💄 Beauté Minimaliste</legend>
           <p class="text-sm">Routines simples & produits clean. Privilégier les essentiels pour révéler sa beauté naturelle.</p>
         </fieldset>
-
         <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
           <legend class="px-2 text-sm font-bold text-[#4B715F]">🧴 Soins Intelligents</legend>
           <p class="text-sm">Actifs naturels, routines peau minimalistes. Moins mais mieux.</p>
         </fieldset>
-        
         <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
           <legend class="px-2 text-sm font-bold text-[#4B715F]">🍽️ Nutrition Intuitive</legend>
           <p class="text-sm">Manger avec plaisir, sans frustration. Simplicité, qualité, écoute de soi.</p>
         </fieldset>
-
         <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
-            <legend class="px-2 text-sm font-bold text-[#4B715F]">🌺 Rituels Naturels</legend>
-            <p class="text-sm">Infusions, automassages, herboristerie... Le pouvoir doux des plantes au quotidien.</p>
+          <legend class="px-2 text-sm font-bold text-[#4B715F]">🌺 Rituels Naturels</legend>
+          <p class="text-sm">Infusions, automassages, herboristerie... Le pouvoir doux des plantes au quotidien.</p>
         </fieldset>
-
         <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
           <legend class="px-2 text-sm font-bold text-[#4B715F]">🕊️ Vivre Léger</legend>
           <p class="text-sm">Consommer moins, mieux, pour une vie plus claire et alignée.</p>
         </fieldset>
-
         <fieldset class="border border-[#DDD0C8] rounded-lg p-4">
           <legend class="px-2 text-sm font-bold text-[#4B715F]">🌍 Éco-Responsabilité</legend>
           <p class="text-sm">Bien-être éthique : marques engagées, produits durables et gestes responsables.</p>
         </fieldset>
       </div>
-
-      <!-- ARTICLE EXEMPLE -->
-      <article class="flex items-center flex-col md:flex-row bg-white border border-[#DDD0C8] p-6 rounded-2xl shadow-sm gap-4">
-          <!-- Image principale -->
-          <div class="w-full md:w-1/2">
-            <img src="./images/essential-oils-3931430_640.jpg" class="rounded-l-xl" alt="image article">
-          </div>
-          <!-- Contenu de l'article -->
-          <div class="article-box w-full md:w-1/2">
+  
+      <!-- ARTICLE -->
+      <article class="flex flex-col md:flex-row bg-white border border-[#DDD0C8] p-6 rounded-2xl shadow-sm gap-4 w-full">
+        <div class="w-full md:w-1/2">
+          <img src="./images/essential-oils-3931430_640.jpg" class="rounded-l-2xl w-100 h-100" alt="image article">
+        </div>
+        <div class="flex flex-col w-full md:w-1/2">
           <h3 class="text-2xl font-bold text-[#4B715F] mb-2">Simplifier sa salle de bain</h3>
-          <p class="text-sm text-[#4B715F] py-2 py-md-4 ">Découvrez comment alléger votre routine quotidienne avec seulement 3 produits efficaces. Moins d’emballages, moins de stress, plus de sérénité.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet alias laborum hic, veritatis animi nihil repellendus! Veritatis quas iusto atque illo recusandae neque odio nihil sunt aspernatur! Sint, nihil.
-            <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, sint quod unde beatae magni, itaque amet dicta laborum earum sequi atque assumenda consequuntur non a nisi aut. Earum, aspernatur eligendi.
-            <br>
-            <br>
-          </p>
-          <div class="flex flex-row items-center text-[#E6B87A] text-sm">
-            <p class="mr-2">
-              Publié le <time datetime="2022-08-24">24 août 2022</time> <!-- par John Doe -->
-            </p>
-            <br>
-            <br>
-            <p>Temps de lecture: <span id="reading-time" class="ml-2"></span></p>
+          <p class="text-sm text-[#4B715F] py-2">Découvrez comment alléger votre routine quotidienne avec seulement 3 produits efficaces. Moins d’emballages, moins de stress, plus de sérénité.</p>
+          <div class="flex flex-wrap items-center text-[#E6B87A] text-sm  space-x-4 py-2">
+            <p>Publié le <time datetime="2022-08-24">24 août 2022</time></p>
+            <p>Temps de lecture: <span id="reading-time"></span></p>
           </div>
-          <!-- Auteur -->
           <div class="flex items-center mt-4">
-            <img src="./images/jane-smith.jpg" alt="Photo de Jane Smith" class="w-12 h-12 rounded-full mr-2">
+            <img src="./images/jane-smith.jpg" alt="Photo de Jane Smith" class="w-10 h-10 rounded-full mr-2">
             <div>
-              <p class="font-bold">Jane Smith</p>
-              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Fusce quis justo euismod, ultricies lorem id, tincidunt erat.</p>
+              <div class="flex items-center space-x-2">
+                <p class="font-bold">Jane Smith</p>
+                <a href="#" class="bg-[#E6B87A] p-2 rounded-full" aria-label="Linkedin"><i class=" w-4 h-4" data-lucide="linkedin"></i></a>
+              </div>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <!-- Catégories et tags -->
-          <div class="mt-4">
-            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Beauté</button>
-            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Recettes</button>
-            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Soins</button>
-            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Bien-être</button>
-            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Eco-responsabilité</button>
-            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2] mr-2">Rituels</button>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2]">Beauté</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2]">Recettes</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2]">Soins</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2]">Bien-être</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2]">Eco-responsabilité</button>
+            <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2]">Rituels</button>
           </div>
           <button class="mt-4 bg-[#4B715F] text-white px-4 py-2 rounded hover:bg-[#355948]">Lire plus</button>
         </div>
       </article>
-      
+  
       <!-- PAGINATION -->
       <div class="flex justify-center space-x-2 pt-4">
         <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2]">1</button>
@@ -116,20 +102,18 @@
         <button class="px-3 py-1 bg-[#DDD0C8] rounded hover:bg-[#A8C4A2]">Suivant</button>
       </div>
     </main>
-
+  
     <!-- SIDEBAR -->
-    <aside class="w-full lg:w-1/3 space-y-6 ms-lg-5">
-      <!-- ABOUT ME -->
-      <fieldset class="border border-[#DDD0C8] rounded-lg p-4 ">
+    <aside class="w-full lg:w-1/3 flex flex-col space-y-6">
+      <!-- ABOUT -->
+      <fieldset class="border border-[#DDD0C8] rounded-lg p-4 text-center">
         <legend class="px-2 text-sm font-semibold text-[#4B715F]">👤 À propos</legend>
-        <div class="text-center">
-          <img src="./images/wellness-1021131_640.jpg" class="mb-4" alt="profil">
-          <h4 class="text-lg font-semibold">Marie Dubois</h4>
-          <p class="text-sm mt-2">Passionnée de bien-être et de simplicité naturelle.</p>
-          <p class="italic mt-2">"Moins mais mieux."</p>
-        </div>
+        <img src="./images/wellness-1021131_640.jpg" class="mb-4 rounded-2xl" alt="profil">
+        <h4 class="text-lg font-semibold">Marie Dubois</h4>
+        <p class="text-sm mt-2">Passionnée de bien-être et de simplicité naturelle.</p>
+        <p class="italic mt-2">"Moins mais mieux."</p>
       </fieldset>
-
+  
       <!-- NEWSLETTER -->
       <fieldset class="border border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
         <legend class="px-2 text-sm font-semibold text-[#4B715F]">📰 Newsletter</legend>
@@ -137,24 +121,26 @@
         <input type="email" placeholder="Votre e-mail" class="w-full p-2 mb-2 rounded border border-[#A8A29E]">
         <button class="bg-[#4B715F] text-white w-full py-2 rounded hover:bg-[#355948]">S'inscrire</button>
       </fieldset>
-
+  
       <!-- SOCIALS -->
       <fieldset class="border border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
         <legend class="px-2 text-sm font-semibold text-[#4B715F]">📱 Suivez-moi</legend>
-        <div class="flex justify-center space-x-4 text-2xl">
-          <a href="#" class="hover:text-[#E6B87A]">📸</a>
-          <a href="#" class="hover:text-[#E6B87A]">🐦</a>
-          <a href="#" class="hover:text-[#E6B87A]">📘</a>
-          <a href="#" class="hover:text-[#E6B87A]">📌</a>
+        <div class="flex justify-center space-x-4 text-2xl text-[#4B715F]">
+          <a href="#" class="bg-[#E6B87A] p-2 rounded-full " aria-label="Youtube"><i data-lucide="youtube"></i></a>
+          <a href="#" class="bg-[#E6B87A] p-2 rounded-full " aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" class="bg-[#E6B87A] p-2 rounded-full " aria-label="Tiktok"><i data-lucide="music"></i></a>
+          <a href="#" class="bg-[#E6B87A] p-2 rounded-full " aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" class="bg-[#E6B87A] p-2 rounded-full " aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+          <a href="#" class="bg-[#E6B87A] p-2 rounded-full " aria-label="Snapchat"><i data-lucide="ghost"></i></a>
         </div>
       </fieldset>
-
+  
       <!-- PUBLICITÉ -->
       <fieldset class="border border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
         <legend class="px-2 text-sm font-semibold text-[#4B715F]">🪧 Publicité</legend>
         <div class="h-24 bg-[#FAF8F5] flex items-center justify-center text-[#A8A29E] border border-dashed border-[#A8A29E]">Ad Here</div>
       </fieldset>
-
+  
       <!-- POSTS POPULAIRES -->
       <fieldset class="border border-[#DDD0C8] rounded-lg p-4 bg-[#FAF8F5]">
         <legend class="px-2 text-sm font-semibold text-[#4B715F]">🔥 Posts populaires</legend>
@@ -168,6 +154,7 @@
       </fieldset>
     </aside>
   </div>
+  
 
   <footer class="bg-[#4B715F] text-[#FAF8F5] p-8 mt-8 rounded-t-2xl text-center space-y-6">
     <!-- Fil conducteur -->
@@ -209,6 +196,11 @@
       </div>
     </div>
   </footer>
+  <script src="https://kit.fontawesome.com/ton_code.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
