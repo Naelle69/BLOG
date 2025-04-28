@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { articles, Article } from "../../../assets/data/articles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const ArticlesComponent: React.FC = () => {
   // État pour la page actuelle
@@ -69,9 +70,13 @@ const ArticlesComponent: React.FC = () => {
               ))}
             </div>
 
-            <button className="mt-4 bg-[#4B715F] text-white px-4 py-2 rounded hover:bg-[#355948]">
+            <Link
+              to={`/article/${article.id}`}
+              className="mt-4 bg-[#4B715F] text-white px-4 py-2 rounded block text-center hover:bg-[#355948] transition duration-300"
+            >
               Lire plus
-            </button>
+            </Link>
+            
           </div>
         </article>
       ))}

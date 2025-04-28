@@ -3,9 +3,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import TagsPage from "./pages/TagsPage"; // Importez correctement le composant TagsPage
-import NotFoundPage from "./pages/NoFoundPage"; // Décommentez cette ligne si vous avez une page 404
+import TagsPage from "./pages/TagsPage";
+import NotFoundPage from "./pages/NoFoundPage"; 
 import ContactPage from "./pages/ContactPage";
+import ArticlePage from "./pages/ArticlePage";
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,9 @@ const App: React.FC = () => {
 
           {/* Page de Contact */}
           <Route path="/contact" element={<ContactPage />} />
+
+          {/* Page Article détaillé */}
+          <Route path="/article/:id" element={<ArticlePage />} />
 
           {/* Page 404 (Erreur) */}
           <Route path="*" element={<NotFoundPage />} />

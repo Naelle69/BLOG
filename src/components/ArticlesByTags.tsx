@@ -2,9 +2,10 @@
 
 import React, { useState } from "react";
 import { articles, Article } from "../assets/data/articles";
+import { Link } from "react-router-dom";
 
 interface ArticlesByTagsProps {
-  tag: string; // Tag sélectionné (ex. "Beauté", "Recettes", "Bien-être")
+  tag: string;
 }
 
 const ArticlesByTags: React.FC<ArticlesByTagsProps> = ({ tag }) => {
@@ -79,9 +80,12 @@ const ArticlesByTags: React.FC<ArticlesByTagsProps> = ({ tag }) => {
                 <p>Temps de lecture : {article.readingTime}</p>
               </div>
 
-              <button className="mt-4 bg-[#4B715F] text-white px-4 py-2 rounded hover:bg-[#355948]">
-                Lire plus
-              </button>
+              <Link
+              to={`/article/${article.id}`}
+              className="mt-4 bg-[#4B715F] text-white px-4 py-2 rounded block text-center hover:bg-[#355948] transition duration-300"
+            >
+              Lire plus
+            </Link>
             </div>
           </article>
         ))

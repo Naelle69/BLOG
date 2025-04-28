@@ -1,4 +1,4 @@
-// src/assets/data/articles.ts
+
 // src/assets/data/articles.ts
 
 export interface Article {
