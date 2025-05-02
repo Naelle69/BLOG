@@ -2,6 +2,7 @@
 
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer"
 import { useParams } from "react-router-dom";
 import ArticlesByTags from "../components/ArticlesByTags";
 import AboutComponent from "../components/ComponentsAccueil/BoxRight/AboutComponent";
@@ -33,6 +34,7 @@ const TagsPage: React.FC = () => {
             <Advertisement />
           </aside>
       </div>
+      <Footer />
     </div>
   );
 };

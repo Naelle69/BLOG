@@ -1,5 +1,16 @@
-function TestComponent() {
-    return <div className="bg-blue-500 text-white p-4">Test Tailwind Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, ipsum eos quibusdam aspernatur fugit dolores velit ratione ipsa rem eligendi, asperiores autem atque quod rerum aut dicta eaque explicabo aliquid.</div>;
-  }
-  
-  export default TestComponent;
+import React from 'react';
+
+export default function Footer () {
+  return (
+    <footer
+      className="bg-neutral-200 text-center dark:bg-neutral-700 lg:text-left">
+      <div className="p-4 text-center text-neutral-700 dark:text-neutral-200">
+        © 2023 Copyright:
+        <a
+          className="text-neutral-800 dark:text-neutral-400"
+          href="https://tw-elements.com/"
+        >TW Elements</a>
+      </div>
+    </footer>
+  );
+}

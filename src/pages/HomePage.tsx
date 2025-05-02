@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-/* import Footer form "../components/Footer"; */
+import Footer from "../components/Footer";
 import ImageComponent from "../components/ComponentsAccueil/BoxLeft/ImageComponent";
 import ThemesComponent from "../components/ComponentsAccueil/BoxLeft/ThemesComponent";
 import ArticlesComponent from "../components/ComponentsAccueil/BoxLeft/ArticlesComponent";
@@ -8,11 +8,11 @@ import PopularPosts from "../components/ComponentsAccueil/BoxRight/PostsComponen
 import NewsletterComponent from "../components/ComponentsAccueil/BoxRight/NewsletterComponent";
 import FollowMeComponent from "../components/ComponentsAccueil/BoxRight/SocialsMediaComponent";
 import Advertisement from "../components/ComponentsAccueil/BoxRight/PubComponent";
-import TestComponent from "../components/Footer"
 
 function HomePage() {
     return (
         <div className="App">
+             
             <Header />
             <div className="container mx-auto flex flex-col lg:flex-row py-8 px-4 gap-8">
                 <main className="w-full lg:w-2/3 flex flex-col items-center space-y-8">
@@ -28,7 +28,7 @@ function HomePage() {
                     <Advertisement />
                 </aside>
             </div>
-            <footer />
+            <Footer />
         </div>
     )
 }
