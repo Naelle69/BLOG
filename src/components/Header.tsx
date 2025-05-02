@@ -1,6 +1,6 @@
 // src/components/Header.tsx
 import React, { useState } from 'react';
-import logo from '../assets/images/logo.svg'; 
+/* import logo from '@/assets/images/logo.svg'; */
 import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
@@ -19,14 +19,16 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-[#FAF8F5] shadow-sm">
-        <div className="text-center py-6 md:py-11 lg:py-16">
+        {/* <div className="text-center py-6 md:py-11 lg:py-16">
           <img
             src={logo}
             alt="Logo Green & Glow"
             className="mx-auto h-6 w-auto md:h-12 lg:h-20 max-h-28 mt-6 lg:mt-0"
           />
-        </div>
+          
+        </div> */}
          {/* Main navigation container  */}
+
 
          <nav className="bg-[#E2D6CF] shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -257,138 +259,6 @@ const Header: React.FC = () => {
       </div>
     </nav>
   
-
-
-
-{/* <nav
-  className="relative flex w-full flex-nowrap items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
-  data-twe-navbar-ref>
-  <div className="flex w-full flex-wrap items-center justify-between px-3">
-
-    <button
-      className="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-      type="button"
-      data-twe-collapse-init
-      data-twe-target="#navbarSupportedContent8"
-      aria-controls="navbarSupportedContent8"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-
-      <span
-        className="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor">
-          <path
-            fill-rule="evenodd"
-            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-            clip-rule="evenodd" />
-        </svg>
-      </span>
-    </button>
-
-   
-    <div
-      className="!visible mt-2 hidden flex-grow basis-[100%] items-center justify-center lg:mt-0 lg:!flex lg:basis-auto"
-      id="navbarSupportedContent8"
-      data-twe-collapse-item>
-      
-      <ul
-        className="list-style-none flex flex-col ps-0 lg:mt-1 lg:flex-row"
-        data-twe-navbar-nav-ref>
-       
-        <li
-          className="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
-          data-twe-nav-item-ref>
-          <a
-            className="text-black dark:text-white lg:px-2"
-            aria-current="page"
-            href="#"
-            data-twe-nav-link-ref
-            >Home</a
-          >
-        </li>
-       
-        <li
-          className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-          data-twe-nav-item-ref>
-          <a
-            className="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-            href="#"
-            data-twe-nav-link-ref
-            >Link</a
-          >
-        </li>
-        
-        <li
-          className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-          data-twe-nav-item-ref
-          data-twe-dropdown-ref>
-          
-          <a
-            className="flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-            href="#"
-            type="button"
-            id="dropdownMenuButton2"
-            data-twe-dropdown-toggle-ref
-            aria-expanded="false">
-            Dropdown
-            <span className="ms-1 [&>svg]:w-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor">
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd" />
-              </svg>
-            </span>
-          </a>
-          <ul
-            className="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
-            aria-labelledby="dropdownMenuButton1"
-            data-twe-dropdown-menu-ref>
-            <li>
-              <a
-                className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                href="#"
-                data-twe-dropdown-item-ref
-                >Action</a
-              >
-            </li>
-            <li>
-              <a
-                className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                href="#"
-                data-twe-dropdown-item-ref
-                >Another action</a
-              >
-            </li>
-            <li>
-              <a
-                className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                href="#"
-                data-twe-dropdown-item-ref
-                >Something else here</a
-              >
-            </li>
-          </ul>
-        </li>
-        
-        <li
-          className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-          data-twe-nav-link-ref>
-          <a
-            className="pointer-events-none text-black/30 dark:text-white/30 lg:px-2"
-            >Disabled</a
-          >
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> */}
     </header>  
   );
 };

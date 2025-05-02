@@ -8,6 +8,7 @@ import PopularPosts from "../components/ComponentsAccueil/BoxRight/PostsComponen
 import NewsletterComponent from "../components/ComponentsAccueil/BoxRight/NewsletterComponent";
 import FollowMeComponent from "../components/ComponentsAccueil/BoxRight/SocialsMediaComponent";
 import Advertisement from "../components/ComponentsAccueil/BoxRight/PubComponent";
+import TestComponent from "../components/Footer"
 
 function HomePage() {
     return (
@@ -27,6 +28,7 @@ function HomePage() {
                     <Advertisement />
                 </aside>
             </div>
+            <footer />
         </div>
     )
 }
