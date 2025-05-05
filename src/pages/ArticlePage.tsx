@@ -1,5 +1,6 @@
-import React from 'react';
+
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import ArticleDetail from "../components/ArticleDetails";
 import CommentsSection from "../components/CommentsComponent";
 
@@ -15,6 +16,7 @@ function ArticlePage(){
                 <aside className="w-full lg:w-1/3 flex flex-col space-y-6">
                 </aside>
             </div>
+            <Footer />
         </div>
     )
 }

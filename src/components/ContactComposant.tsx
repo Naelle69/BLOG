@@ -28,9 +28,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="max-w-md mx-auto p-6 my-10 bg-[#fff] border border-[#DDD0C8] shadow-lg rounded-lg">
       {/* Titre */}
-      <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
+      <h2 className="text-2xl font-bold text-center text-[#4B715F] mb-6">
         Formulaire de Contact
       </h2>
 
@@ -48,7 +48,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="mt-1 block w-full px-3 py-2 border border-[#DDD0C8] rounded-md shadow-sm focus:outline-none focus:ring-indigo-[#DDD0C8] focus:border-indigo-[#DDD0C8] sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 border border-[#DDD0C8] rounded-md shadow-sm focus:outline-none focus:ring-[#DDD0C8] focus:border-[#DDD0C8] sm:text-sm"
             placeholder="Votre nom"
           />
         </div>
@@ -65,7 +65,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="mt-1 block w-full px-3 py-2 border border-[#DDD0C8] rounded-md shadow-sm focus:outline-none focus:ring-indigo-[#DDD0C8] focus:border-indigo-[#DDD0C8] sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 border border-[#DDD0C8] rounded-md shadow-sm focus:outline-none focus:ring-[#DDD0C8] focus:border-[#DDD0C8] sm:text-sm"
             placeholder="Votre email"
           />
         </div>
@@ -82,7 +82,7 @@ const ContactForm = () => {
             value={formData.subject}
             onChange={handleChange}
             required
-            className="mt-1 block w-full px-3 py-2 border border-[#DDD0C8] rounded-md shadow-sm focus:outline-none focus:ring-indigo-[#DDD0C8] focus:border-indigo-[#DDD0C8] sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 border border-[#DDD0C8] rounded-md shadow-sm focus:outline-none sm:text-sm"
             placeholder="Sujet du message"
           />
         </div>

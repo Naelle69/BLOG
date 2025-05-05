@@ -87,7 +87,7 @@ const Header: React.FC = () => {
             data-twe-collapse-item
           >
             <ul
-              className="list-style-none flex flex-col ps-0 lg:mt-1 lg:flex-row"
+              className="list-style-none flex flex-col ps-0 space-x-5 lg:mt-1 lg:flex-row"
               data-twe-navbar-nav-ref
             >
               {/* Home */}
@@ -96,12 +96,41 @@ const Header: React.FC = () => {
                 data-twe-nav-item-ref
               >
                 <Link 
-                  className="text-black dark:text-white lg:px-2"
+                  className="text-[#4B715F] transition duration-200 hover:text-[#4B715F]/80 hover:ease-in-out focus:text-[#264637]
+ active:text-[#E6B87A] lg:px-2"
                   aria-current="page"
                   to="/"
                   data-twe-nav-link-ref
                 >
                   Accueil
+                </Link >
+              </li>
+              <li
+                className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                data-twe-nav-item-ref
+              >
+                <Link 
+                  className="p-0 text-[#4B715F] transition duration-200 hover:text-text-[#264637] hover:ease-in-out focus:text-[#264637]
+ active:text-[#264637] motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  to="/"
+                  data-twe-nav-link-ref
+                >
+                  Slow Beauty
+                </Link>
+              </li>
+
+              {/* Link */}
+              <li
+                className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                data-twe-nav-item-ref
+              >
+                <Link 
+                  className="p-0 text-[#4B715F] transition duration-200 hover:text-[#4B715F]/80 hover:ease-in-out focus:text-[#264637]
+ active:text-[#4B715F]/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  to="/"
+                  data-twe-nav-link-ref
+                >
+                  Rituels
                 </Link >
               </li>
 
@@ -111,11 +140,12 @@ const Header: React.FC = () => {
                 data-twe-nav-item-ref
               >
                 <Link 
-                  className="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  className="p-0 text-[#4B715F] transition duration-200 hover:text-[#4B715F]/80 hover:ease-in-out focus:text-[#264637]
+ active:text-[#4B715F]/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                   to="/"
                   data-twe-nav-link-ref
                 >
-                  Link
+                  Nutrition
                 </Link >
               </li>
 
@@ -126,7 +156,8 @@ const Header: React.FC = () => {
                 data-twe-dropdown-ref
               >
                 <Link 
-                  className="flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  className="flex items-center text-[#4B715F] transition duration-200 hover:text-[#4B715F]/80 hover:ease-in-out focus:text-[#264637]
+ active:text-[#4B715F]/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                   to="/"
                   role="button"
                   id="dropdownMenuButton2"
@@ -163,7 +194,7 @@ const Header: React.FC = () => {
                 >
                   <li>
                     <Link 
-                      className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-[#FAF8F5] dark:focus:bg-neutral-[#FAF8F5] dark:active:bg-neutral-[#FAF8F5]"
+                      className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-[#4B715F] active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-[#FAF8F5] dark:focus:bg-neutral-[#FAF8F5] dark:active:bg-neutral-[#FAF8F5]"
                       to="/"
                       data-twe-dropdown-item-ref
                     >
@@ -172,7 +203,8 @@ const Header: React.FC = () => {
                   </li>
                   <li>
                     <Link 
-                      className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-[#FAF8F5] dark:focus:bg-neutral-[#FAF8F5] dark:active:bg-neutral-[#FAF8F5]"
+                      className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-[#4B715F] transition duration-200 hover:text-[#4B715F]/80 hover:ease-in-out focus:text-[#264637]
+ active:text-[#4B715F]/80 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-[#FAF8F5] dark:focus:bg-neutral-[#FAF8F5] dark:active:bg-neutral-[#FAF8F5]"
                       to="/"
                       data-twe-dropdown-item-ref
                     >
@@ -181,7 +213,8 @@ const Header: React.FC = () => {
                   </li>
                   <li>
                     <Link 
-                      className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                      className="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-[#4B715F] transition duration-200 hover:text-[#4B715F]/80 hover:ease-in-out focus:text-[#264637]
+ active:text-[#4B715F]/80 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
                       to="/"
                       data-twe-dropdown-item-ref
                     >
@@ -191,17 +224,49 @@ const Header: React.FC = () => {
                 </ul>
               </li>
 
+              {/* Link */}
+              <li
+                className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                data-twe-nav-item-ref
+              >
+                <Link 
+                  className="p-0 text-[#4B715F] transition duration-200 hover:text-[#4B715F]/80 hover:ease-in-out focus:text-[#264637]
+ active:text-[#4B715F]/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  to="/"
+                  data-twe-nav-link-ref
+                >
+                  Eco-Soins
+                </Link >
+              </li>
+
+              {/* Link */}
+              <li
+                className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                data-twe-nav-item-ref
+              >
+                <Link 
+                  className="p-0 text-[#4B715F] transition duration-200 hover:text-[#4B715F]/80 hover:ease-in-out focus:text-[#264637]
+ active:text-[#4B715F]/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  to="/"
+                  data-twe-nav-link-ref
+                >
+                  Bien-être durable
+                </Link >
+              </li>
+
               {/* Disabled link */}
               <li
                 className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
                 data-twe-nav-link-ref
               >
-                <a 
-                  className="pointer-events-none text-black/30 dark:text-white/30 lg:px-2"
-                  aria-disabled="true"
+                <Link 
+                  className="p-0 text-[#4B715F] transition duration-200 hover:text-[#4B715F]/80 hover:ease-in-out focus:text-[#264637]
+ active:text-[#4B715F]/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  to="/contact"
+                  data-twe-nav-link-ref
                 >
-                  Disabled
-                </a >
+                  Contact
+                  </Link >
               </li>
             </ul>
           </div>

@@ -10,10 +10,8 @@ import ArticlePage from "./pages/ArticlePage";
 
 const App: React.FC = () => {
   
-  return (
-    
+  return (   
     <Router>
-
       <div className="min-h-screen bg-[#FAF8F5]">
         {/* Routes */}
         <Routes>

@@ -117,7 +117,7 @@ const CommentsSection = () => {
           <a href="#" className="text-blue-500 hover:underline">
             Lire le commentaire
           </a>
-          <hr className="my-4" />
+          <hr className="my-4 border-t-0 border-b border-[#DDD0C8]" />
         </div>
       ))}
 
