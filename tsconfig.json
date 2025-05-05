@@ -1,17 +1,19 @@
 {
-  "compilerOptions": {
-    "target": "es2021",
-    "module": "ESNext",           // Compatible avec Vite et React
-    "moduleResolution": "bundler",// Optimisé pour les bundlers modernes (Vite/Webpack)
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "lib": ["dom", "es2021"],
-    "types": ["vite/client"],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  },
-  "include": ["src/**/*"]
-}
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "strict": true,
+      "jsx": "react-jsx", 
+      "moduleResolution": "node",      // ✅ Ajouté
+      "esModuleInterop": true,         // ✅ Activé
+      "skipLibCheck": true,
+      "outDir": "./dist",
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"] 
+      },
+      "types": ["vite-plugin-svgr/client", "node"] // ✅ Types Node.js
+    },
+    "include": ["src/**/*"]
+  }

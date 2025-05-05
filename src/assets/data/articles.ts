@@ -29,11 +29,11 @@ export const articles: Article[] = [
     readingTime: "3 min",
     author: {
       name: "Jane Smith",
-      photo: "vite.svg",
+      photo: "Auteur",
       bio: "Passionnée de soins naturels et de routines minimalistes.",
       linkedinUrl: "#",
     },
-    imageUrl: "../../../assets/images/essential-oils-3931430_640.jpg",
+    imageUrl: "/images/essential-oils-3931430_640.jpg",
     tags: ["Beauté", "Soins", "Bien-être"],
   },
   {
@@ -46,11 +46,11 @@ export const articles: Article[] = [
     readingTime: "4 min",
     author: {
       name: "Jane Smith",
-      photo: "./images/jane-smith.jpg",
+      photo: "/images/jane-smith.jpg",
       bio: "Experte en bien-être holistique et pratiques de santé.",
       linkedinUrl: "#",
     },
-    imageUrl: "./images/yoga-session.jpg",
+    imageUrl: "/images/yoga-3889185_640.jpg",
     tags: ["Santé", "Bien-être", "Rituels"],
   },
   {
@@ -63,11 +63,11 @@ export const articles: Article[] = [
     readingTime: "5 min",
     author: {
       name: "Jane Smith",
-      photo: "./images/jane-smith.jpg",
+      photo: "/images/jane-smith.jpg",
       bio: "Coach en productivité et routines quotidiennes.",
       linkedinUrl: "#",
     },
-    imageUrl: "./images/morning-ritual.jpg",
+    imageUrl: "/images/essential-oils-3931430_640.jpg",
     tags: ["Rituels", "Bien-être", "Productivité"],
   },
   {
@@ -80,11 +80,11 @@ export const articles: Article[] = [
     readingTime: "4 min",
     author: {
       name: "Jane Smith",
-      photo: "./images/jane-smith.jpg",
+      photo: "/images/jane-smith.jpg",
       bio: "Spécialiste en soins de la peau et routines naturelles.",
       linkedinUrl: "#",
     },
-    imageUrl: "./images/skin-care.jpg",
+    imageUrl: "/images/essential-oils-3931430_640.jpg",
     tags: ["Soins", "Beauté", "Bien-être"],
   },
   {
@@ -97,11 +97,11 @@ export const articles: Article[] = [
     readingTime: "3 min",
     author: {
       name: "Jane Smith",
-      photo: "./images/jane-smith.jpg",
+      photo: "/images/jane-smith.jpg",
       bio: "Nutritionniste passionnée par les recettes saines.",
       linkedinUrl: "#",
     },
-    imageUrl: "./images/smoothie.jpg",
+    imageUrl: "/images/essential-oils-3931430_640.jpg",
     tags: ["Recettes", "Santé", "Bien-être"],
   },
   {
@@ -114,11 +114,11 @@ export const articles: Article[] = [
     readingTime: "5 min",
     author: {
       name: "Jane Smith",
-      photo: "./images/jane-smith.jpg",
+      photo: "/images/jane-smith.jpg",
       bio: "Engagée pour une vie plus durable et respectueuse de l'environnement.",
       linkedinUrl: "#",
     },
-    imageUrl: "./images/eco-friendly.jpg",
+    imageUrl: "/images/essential-oils-3931430_640.jpg",
     tags: ["Eco-responsabilité", "Bien-être", "Rituels"],
   },
   {
@@ -131,11 +131,11 @@ export const articles: Article[] = [
     readingTime: "4 min",
     author: {
       name: "Jane Smith",
-      photo: "./images/jane-smith.jpg",
+      photo: "/images/jane-smith.jpg",
       bio: "Make-up artist spécialisée dans le naturel.",
       linkedinUrl: "#",
     },
-    imageUrl: "./images/natural-makeup.jpg",
+    imageUrl: "/images/essential-oils-3931430_640.jpg",
     tags: ["Beauté", "Soins", "Bien-être"],
   },
   {
@@ -148,11 +148,11 @@ export const articles: Article[] = [
     readingTime: "4 min",
     author: {
       name: "Jane Smith",
-      photo: "./images/jane-smith.jpg",
+      photo: "/images/jane-smith.jpg",
       bio: "Coach en développement personnel et bien-être mental.",
       linkedinUrl: "#",
     },
-    imageUrl: "./images/positive-mindset.jpg",
+    imageUrl: "/images/essential-oils-3931430_640.jpg",
     tags: ["Bien-être", "Rituels", "Développement personnel"],
   },
 ];

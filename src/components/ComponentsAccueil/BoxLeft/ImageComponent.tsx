@@ -8,7 +8,7 @@ const ImageComponent: React.FC = () => {
         alt="Hero"
         className="w-full rounded-2xl"
       />
-      <div className="absolute inset-0 bg-black bg-opacity-40 rounded-2xl flex flex-col justify-center items-center text-white p-8">
+      <div className="absolute inset-0 bg-black/40 rounded-2xl flex flex-col justify-center items-center text-white p-8">
         <h2 className="text-4xl font-bold font-serif">Simplement Essentiel</h2>
         <p className="mt-2 text-center text-4xl">Moins de produits, plus de bien-être</p>
       </div>

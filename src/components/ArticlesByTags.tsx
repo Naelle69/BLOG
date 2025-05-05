@@ -52,13 +52,13 @@ const ArticlesByTags: React.FC<ArticlesByTagsProps> = ({ tag }) => {
             key={article.id}
             className="flex flex-col md:flex-row bg-white border border-[#DDD0C8] p-6 rounded-2xl shadow-sm gap-4 w-full mb-6"
           >
-            <div className="w-full md:w-1/2">
-              <img
-                src={article.imageUrl}
-                alt={`Image pour l'article ${article.title}`}
-                className="rounded-l-2xl w-full h-full object-cover"
-              />
-            </div>
+          <div className="w-full md:w-1/2 h-full">
+            <img
+              src={article.imageUrl}
+              alt={`Image pour l'article ${article.title}`}
+              className="rounded-l-2xl w-full h-full object-cover aspect-video" // ✅ Ex: aspect-video = 16/9
+            />
+          </div>
 
             <div className="flex flex-col w-full md:w-1/2">
               <h3 className="text-2xl font-bold text-[#4B715F] mb-2">

@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ImageComponent from "../components/ComponentsAccueil/BoxLeft/ImageComponent";
@@ -12,7 +13,6 @@ import Advertisement from "../components/ComponentsAccueil/BoxRight/PubComponent
 function HomePage() {
     return (
         <div className="App">
-             
             <Header />
             <div className="container mx-auto flex flex-col lg:flex-row py-8 px-4 gap-8">
                 <main className="w-full lg:w-2/3 flex flex-col items-center space-y-8">

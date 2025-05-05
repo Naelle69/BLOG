@@ -1,4 +1,4 @@
-import react from "react";
+import React from 'react';
 import Header from "../components/Header";
 import ArticleDetail from "../components/ArticleDetails";
 import CommentsSection from "../components/CommentsComponent";

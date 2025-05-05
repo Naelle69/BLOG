@@ -53,8 +53,8 @@ const ArticlesComponent: React.FC = () => {
               <img src={article.author.photo} alt={`Photo de ${article.author.name}`} className="w-10 h-10 rounded-full mr-2" />
               <div>
                 <div className="flex items-center space-x-2">
-                  <p className="font-bold">{article.author.name}</p>
-                  <a href="#" className="bg-[#E6B87A] p-1 rounded-full w-[30px] h-[30px] align-center text-center" aria-label="Linkedin">
+                  <p className="font-bold text-[#4B715F]">{article.author.name}</p>
+                  <a href="#" className="bg-[#E6B87A]  text-[#4B715F] p-1 rounded-full w-[30px] h-[30px] align-center text-center" aria-label="Linkedin">
                     <FontAwesomeIcon icon={faLinkedin} size="sm" />
                   </a>
                 </div>

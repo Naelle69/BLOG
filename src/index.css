@@ -1,7 +1,8 @@
+/* index.css */
+/* @import "tailwindcss/preflight.css";
+@tailwind utilities; */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: 'Birthstone';
@@ -9,6 +10,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.btn {
+  @apply px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600;
+} 
+
 
 /* :root {
   font-family: Birthstone;
