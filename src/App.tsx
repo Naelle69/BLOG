@@ -8,8 +8,8 @@ import NotFoundPage from "./pages/NoFoundPage";
 import ContactPage from "./pages/ContactPage";
 import ArticlePage from "./pages/ArticlePage";
 
+
 const App: React.FC = () => {
-  
   return (   
     <Router>
       <div className="min-h-screen bg-[#FAF8F5]">
