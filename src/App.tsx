@@ -7,7 +7,7 @@ import TagsPage from "./pages/TagsPage";
 import NotFoundPage from "./pages/NoFoundPage"; 
 import ContactPage from "./pages/ContactPage";
 import ArticlePage from "./pages/ArticlePage";
-
+import testPage from "."
 
 const App: React.FC = () => {
   return (   
